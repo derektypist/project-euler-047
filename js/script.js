@@ -38,7 +38,7 @@ function distinctPrimeFactors(targetNumPrimes,targetConsecutive) {
     let numConsecutive = 0;
     let currNumber = 10;
     while (numConsecutive < targetConsecutive) {
-        if (NUMFACTORS[currNumber] === targetNumPrimes) {
+        if (NUMFACTORS[currNumber]=== targetNumPrimes) {
             numConsecutive++;
         } else {
             numConsecutive = 0;
