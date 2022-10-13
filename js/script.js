@@ -18,7 +18,7 @@ function showSolution() {
     // Apply For Loops
     for (let primeFacs = 2;primeFacs<=4;primeFacs++) {
         for (let consec = 2;consec<=5;consec++) {
-            txt += `With ${primeFacs} prime factors and ${consec}, solution is ${distinctPrimeFactors(primeFacs,consec)} <p>`;
+            txt += `With ${primeFacs} prime factors and ${consec} <p>`;
         }
     }
     
