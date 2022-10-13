@@ -14,9 +14,16 @@ const NUMFACTORS = Array(150000).fill(0);
 function showSolution() {
     // Set Up Variable
     let txt = "";
+
+    // Apply For Loops
+    for (let primeFacs = 2;primeFacs<=4;primeFacs++) {
+        for (let consec = 2;consec<=5;consec++) {
+            txt += `With ${primeFacs} prime factors and ${consec}, solution is ${distinctPrimeFactors(primeFacs,consec)} <p>`;
+        }
+    }
     
     // Display Information in the Browser
-    document.getElementById("numbersinfo").innerHTML = txt;
+    document.getElementById("solution").innerHTML = txt;
 }
 
 /*
@@ -41,8 +48,8 @@ function distinctPrimeFactors(targetNumPrimes,targetConsecutive) {
     return currNumber - targetConsecutive;
 }
 
-// Function to Clear Information
+// Function to Hide Solution
 function clearInfo() {
     let txt = "";
-    document.getElementById("numbersinfo").innerHTML = txt;
+    document.getElementById("solution").innerHTML = txt;
 }
