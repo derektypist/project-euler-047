@@ -21,7 +21,7 @@ function getNumberInfo() {
         txt += `Invalid Input.  Please enter a whole number between 2 and 4.  Do not include leading zeros.`;
     } else {
         txt += `You have requested ${num} prime factors. <p>`;
-       
+        txt += `Solution is ${distinctPrimeFactors(num,num)}`;
     }
     
     // Display Information in the Browser
