@@ -49,7 +49,7 @@ function distinctPrimeFactors(targetNumPrimes,targetConsecutive) {
 }
 
 // Function to Hide Solution
-function clearInfo() {
+function hideSolution() {
     let txt = "";
     document.getElementById("solution").innerHTML = txt;
 }
