@@ -61,9 +61,31 @@ function getInfo() {
         
     } else {
         txt += `You have requested ${num1} prime factors and ${num2} consecutive numbers. <p>`;
-        txt += `First Consecutive Number is ${distinctPrimesFactors(num1,num2)}.`;
+        txt += `First Consecutive Number is ${distinctPrimeFactors(num1,num2)}.`;
     }
 
     // Display Information in the Browser
     document.getElementById("numbersinfo").innerHTML = txt;
+}
+
+/*
+    Function to return the first value of the first certain
+    number of consecutive integers to have a certain number of
+    distinct prime factors each
+    distinctPrimeFactors(2,2) returns 14
+    distinctPrimeFactors(3,3) returns 644
+    distinctPrimeFactors(4,4) returns 134043
+*/
+function distinctPrimeFactors(targetNumPrimes,targetConsecutive) {
+    let numConsecutive = 0;
+    let currNumber = 10;
+    while (numConsecutive < targetConsecutive) {
+        if (NUMFACTORS[currNumber] === targetNumPrimes) {
+            numConsecutive++;
+        } else {
+            numConsecutive = 0;
+        }
+        currNumber++;
+    }
+    return currNumber - targetConsecutive;
 }
