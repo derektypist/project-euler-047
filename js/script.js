@@ -61,7 +61,7 @@ function getInfo() {
         
     } else {
         txt += `You have requested ${num1} prime factors and ${num2} consecutive numbers. <p>`;
-        txt += `First Consecutive Number is ${distinctPrimeFactors(num1,num2)}.`;
+        
     }
 
     // Display Information in the Browser
