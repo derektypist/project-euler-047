@@ -16,7 +16,7 @@ function showSolution() {
     let txt = "";
     // Apply For Loop
     for (let i=2;i<=4;i++) {
-        txt += `With ${i} prime factors, solution is ${distinctPrimeFactors(i,i)}<br>`;
+        txt += `With ${i} prime factors and ${i} consecutive numbers, solution is ${distinctPrimeFactors(i,i)}<br>`;
     }
     
     // Display Information in the Browser
