@@ -25,24 +25,35 @@
         <p><span class="terms">644 = 2<sup>2</sup> x 7 x 23</span></p>
         <p><span class="terms">645 = 3 x 5 x 43</span></p>
         <p><span class="terms">646 = 2 x 17 x 19</span></p>
-        <p>Find the first four consecutive numbers to have four distinct prime factors each.  What is the first of these numbers?  Begin by entering the number of prime factors.</p>
+        <p>Find the first four consecutive numbers to have four distinct prime factors each.  What is the first of these numbers?  Begin by entering the number of prime factors and number of consecutive numbers.</p>
     </section>
 
     <!-- Set Up Form -->
     <section class="container-fluid">
         <form>
-            <!-- Set Up Label and Input -->
+            <!-- Set Up Labels and Inputs -->
             <article class="mb-3">
-                <label for="mynumber" class="form-label">Number of Prime Factors (Required)</label>
-                <input class="form-control" title="Enter whole number between 2 and 4 (without leading zeros)" placeholder="Enter whole number between 2 and 4 (without leading zeros" id="mynumber">
+                <label for="primefacs" class="form-label">Number of Prime Factors (Required)</label>
+                <input class="form-control" title="Enter whole number between 2 and 4 (without leading zeros)" placeholder="Enter whole number between 2 and 4 (without leading zeros" id="primefacs">
+            </article>
+
+            <article class="mb-3">
+                <label for="consec" class="form-label">Number of Consecutive Numbers (Required)</label>
+                <input class="form-control" title="Enter whole number between 2 and 5 (without leading zeros)" placeholder="Enter whole number between 2 and 5 (without leading zeros)" id="consec">
             </article>
 
             <!-- Set Up and Center Buttons -->
             <article class="d-grid gap-2 d-flex justify-content-center">
-                <button type="button" class="btn btn-info" onclick="getNumberInfo()">Submit</button>
+                <button type="button" class="btn btn-info" onclick="getInfo()">Submit</button>
                 <button type="reset" class="btn btn-warning" onclick="clearInfo()">Reset</button>
             </article>
         </form>
+
+        <!-- Display Numbers Information -->
+        <p id="numbersinfo"></p>
+
+        <!-- Load Script -->
+        <script src="js/script.js"></script>
     </section>
 
 </body>
