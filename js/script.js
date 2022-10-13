@@ -10,22 +10,17 @@ const NUMFACTORS = Array(150000).fill(0);
     }
 })(150000);
 
-// Function to Get Number Information (including Invalid Input)
-function getNumberInfo() {
+// Function to Show Solution
+function showSolution() {
     // Set Up Variable
     let txt = "";
-    // Get the value of the Input Field
-    let num = document.getElementById("mynumber").value;
-    // Check if Input is Valid
-    if (isNaN(num) || num.length==0 || num<2 || num>4 || (num.length>1 && num[0]=="0") || !Number.isInteger(Number(num))) {
-        txt += `Invalid Input.  Please enter a whole number between 2 and 4.  Do not include leading zeros.`;
-    } else {
-        txt += `You have requested ${num} prime factors. <p>`;
-        txt += `Solution is ${distinctPrimeFactors(num,num)}`;
+    // Apply For Loop
+    for (let i=2;i<=4;i++) {
+        txt += `With ${i} prime factors, solution is ${distinctPrimeFactors(i,i)}<br>`;
     }
     
     // Display Information in the Browser
-    document.getElementById("numinfo").innerHTML = txt;
+    document.getElementById("solution").innerHTML = txt;
 }
 
 /*
@@ -50,8 +45,8 @@ function distinctPrimeFactors(targetNumPrimes,targetConsecutive) {
     return currNumber - targetConsecutive;
 }
 
-// Function to Clear Information
-function clearInfo() {
+// Function to Hide Solution
+function hideSolution() {
     let txt = "";
-    document.getElementById("numinfo").innerHTML = txt;
+    document.getElementById("solution").innerHTML = txt;
 }
