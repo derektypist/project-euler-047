@@ -29,31 +29,16 @@
             numbers? Begin by entering the number of prime factors and number of consecutive numbers.</p>
     </section>
 
-    <!-- Set Up Form -->
+    <!-- Set Up and Center Buttons -->
     <section class="container-fluid">
-        <form>
-            <!-- Set Up Labels and Inputs -->
-            <article class="mb-3">
-                <label for="primefacs" class="form-label">Number of Prime Factors (Required)</label>
-                <input class="form-control" title="Enter whole number between 2 and 4 (without leading zeros)"
-                    placeholder="Enter whole number between 2 and 4 (without leading zeros" id="primefacs">
-            </article>
 
-            <article class="mb-3">
-                <label for="consec" class="form-label">Number of Consecutive Numbers (Required)</label>
-                <input class="form-control" title="Enter whole number between 2 and 5 (without leading zeros)"
-                    placeholder="Enter whole number between 2 and 5 (without leading zeros)" id="consec">
-            </article>
+        <article class="d-grid gap-2 d-flex justify-content-center">
+            <button type="button" class="btn btn-info" onclick="showSolution()">Show Solution</button>
+            <button type="reset" class="btn btn-warning" onclick="hideSolution()">Hide Solution</button>
+        </article>
 
-            <!-- Set Up and Center Buttons -->
-            <article class="d-grid gap-2 d-flex justify-content-center">
-                <button type="button" class="btn btn-info" onclick="getInfo()">Submit</button>
-                <button type="reset" class="btn btn-warning" onclick="clearInfo()">Reset</button>
-            </article>
-        </form>
-
-        <!-- Display Numbers Information -->
-        <p id="numbersinfo"></p>
+        <!-- Display Solution Information -->
+        <p id="solution"></p>
 
         <!-- Load Script -->
         <script src="js/script.js"></script>
