@@ -19,7 +19,7 @@ Information at [Project Euler 047](https://projecteuler.net/problem=47)
 
 **Getting Started**
 
-Enter a whole number between 2 and 4 (without leading zeros such as 02) and click on the Submit Button.  You will see the first consecutive number to have that number of distinct prime factors, unless you have made an invalid input.  For example, if you submitted 2, you would expect the result to return 14.  Click on the Reset Button to clear the information or to start again.
+Enter the number of prime factors as a whole number between 2 and 4 (without leading zeros such as 02).  Enter the number of consecutive numbers as a whole number between 2 and 5 (without leading zeros). Click on the Submit Button.  You will see the first consecutive number to have that number of distinct prime factors, unless you have made an invalid input.  For example, if you submitted 2 as the number of prime factors and 2 as the number of consecutive numbers, you would expect the result to return 14.  Click on the Reset Button to clear the information or to start again.
 
 **User Stories**
 
