@@ -10,20 +10,22 @@ const NUMFACTORS = Array(150000).fill(0);
     }
 })(150000);
 
-// Function to Show Solution
-function showSolution() {
+// Function to Get Number Information (including Invalid Input)
+function getNumberInfo() {
     // Set Up Variable
     let txt = "";
-
-    // Apply For Loops
-    for (let primeFacs = 2;primeFacs<=4;primeFacs++) {
-        for (let consec = 2;consec<=5;consec++) {
-            txt += `With ${primeFacs} ${distinctPrimeFactors(primeFacs,primeFacs)} <p>`;
-        }
+    // Get the value of the Input Field
+    let num = document.getElementById("mynumber").value;
+    // Check if Input is Valid
+    if (isNaN(num) || num.length==0 || num<2 || num>4 || (num.length>1 && num[0]=="0") || !Number.isInteger(Number(num))) {
+        txt += `Invalid Input.  Please enter a whole number between 2 and 4.  Do not include leading zeros.`;
+    } else {
+        txt += `You have requested ${num} prime factors. <p>`;
+        txt += `First Consecutive Number is ${distinctPrimeFactors(num,num)}`;
     }
     
     // Display Information in the Browser
-    document.getElementById("solution").innerHTML = txt;
+    document.getElementById("numinfo").innerHTML = txt;
 }
 
 /*
@@ -48,8 +50,8 @@ function distinctPrimeFactors(targetNumPrimes,targetConsecutive) {
     return currNumber - targetConsecutive;
 }
 
-// Function to Hide Solution
-function hideSolution() {
+// Function to Clear Information
+function clearInfo() {
     let txt = "";
-    document.getElementById("solution").innerHTML = txt;
+    document.getElementById("numinfo").innerHTML = txt;
 }
