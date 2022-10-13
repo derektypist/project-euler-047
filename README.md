@@ -17,6 +17,10 @@ Information at [Project Euler 047](https://projecteuler.net/problem=47)
 
 ## UX
 
+**Getting Started**
+
+Enter a whole number between 2 and 4 (without leading zeros such as 02) and click on the Submit Button.  You will see the first consecutive number to have that number of distinct prime factors, unless you have made an invalid input.  For example, if you submitted 2, you would expect the result to return 14.  Click on the Reset Button to clear the information or to start again.
+
 **User Stories**
 
 As a user, I expect the function `distinctPrimesFactors(2,2)` to return a number.
