@@ -23,6 +23,15 @@ Enter the number of prime factors as a whole number between 2 and 4 (without lea
 
 **User Stories**
 
+As a user, I expect to get an error message, if I do any of:
+
+- Entering text other than a number in either of the two input fields or both
+- Not enter anything in either of the two input fields or both
+- Entering a number less than 2 or greater than 4 in the first input field (Number of Prime Factors)
+- Entering a number less than 2 or greater than 5 in the second input field (Number of Consecutive Numbers)
+- Including Leading Zeros (e.g. 02) in either of the two input fields or both
+- Entering a number, but it is not an integer in either of the two input fields or both
+
 As a user, I expect the function `distinctPrimesFactors(2,2)` to return a number.
 
 As a user, I expect the function `distinctPrimesFactors(2,2)` to return 14.
@@ -37,5 +46,5 @@ User Stories on function `distinctPrimesFactors(targetNumPrimes,targetConsecutiv
 
 The function `distinctPrimesFactors(targetNumPrimes,targetConsecutive)` returns a number.  The parameters `targetNumPrimes` and `targetConsecutive` are both numbers.
 
-`targetNumPrimes` ranges from 2 to 4 and `targetConsecutive` ranges from 2 to 4.
+`targetNumPrimes` ranges from 2 to 4 and `targetConsecutive` ranges from 2 to 5.
 
