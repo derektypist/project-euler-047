@@ -48,3 +48,19 @@ The function `distinctPrimesFactors(targetNumPrimes,targetConsecutive)` returns 
 
 `targetNumPrimes` ranges from 2 to 4 and `targetConsecutive` ranges from 2 to 5.
 
+## Features
+
+Allows the user to enter the number of prime factors and number of consecutive numbers.  Finds the first consecutive number in the number of consecutive numbers with the number of prime factors.  Performs checks on inputs.  If the inputs are not valid, an error message is displayed.
+
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.2.2 and Google Fonts.
+
+## Testing
+
+Ensure all user stories have been met.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/project-euler-047) at the main branch.
+
