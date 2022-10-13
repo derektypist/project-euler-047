@@ -29,16 +29,24 @@
             numbers? Begin by entering the number of prime factors and number of consecutive numbers.</p>
     </section>
 
-    <!-- Set Up and Center Buttons -->
+    <!-- Set Up Form -->
     <section class="container-fluid">
+        <form>
+            <!-- Set Up Label and Input -->
+            <article class="mb-3">
+                <label for="mynumber" class="form-label">Number of Prime Factors (Required)</label>
+                <input class="form-control" title="Enter whole number between 2 and 4 (without leading zeros)"
+                    placeholder="Enter whole number between 2 and 4 (without leading zeros)" id="mynumber">
+            </article>
 
-        <article class="d-grid gap-2 d-flex justify-content-center">
-            <button type="button" class="btn btn-info" onclick="showSolution()">Show Solution</button>
-            <button type="reset" class="btn btn-warning" onclick="hideSolution()">Hide Solution</button>
-        </article>
+            <article class="d-grid gap-2 d-flex justify-content-center">
+                <button type="button" class="btn btn-info" onclick="getNumberInfo()">Submit</button>
+                <button type="reset" class="btn btn-warning" onclick="clearInfo()">Reset</button>
+            </article>
+        </form>
 
-        <!-- Display Solution Information -->
-        <p id="solution"></p>
+        <!-- Display Number Information -->
+        <p id="numinfo"></p>
 
         <!-- Load Script -->
         <script src="js/script.js"></script>
